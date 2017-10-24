@@ -81,6 +81,13 @@ public class PropsUtil {
         return getBoolean(props, key, false);
     }
 
+    /**
+     * 加载布尔类型（可以制定默认值）
+     * @param props
+     * @param key
+     * @param defaultValue
+     * @return
+     */
     public static boolean getBoolean(Properties props, String key, boolean defaultValue){
         boolean value = defaultValue;
         if(props.contains(key)){
